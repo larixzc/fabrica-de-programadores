@@ -1,0 +1,77 @@
+/*Reset das margens da página*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Estilos globais*/
+body {
+    font-family: Arial, Helvetica, sans-serif; /*Fonte do texto*/
+    background-color: rgb(227, 212, 235); /*Cor do fundo*/
+    color: rgb(59, 54, 54); /*Cor do texto*/
+    display: flex; /*Libera o conteúdo do body*/
+    justify-content: center; /*Centraliza o Conteúdo Horizontal*/
+    align-items: center; /*Centralizar o conteúdo na vertical*/
+    height: 100vh;
+}
+.container {
+    background-color: rgb(255,255,255);
+    padding: 20px; /*Margem interna da caixa*/
+    border-radius: 8px;  /*Borda arredondada*/
+    box-shadow: 4px 8px rgba(151, 16, 16, 0.1);
+    width: 100%; /*Largura*/
+    max-width: 400px; /*Largura máxima*/
+    text-align: center; /*Alinhamento do texto*/
+}
+h1{
+    font-size: 24px; /*Tamanho da fonte de título*/
+    color: black;
+    margin-bottom: 20px;
+}
+/*Formatação para cada campo do formulário*/
+.form-group {
+    margin-bottom: 15px;
+    text-align: left; /*Alinhamneto para a esquerda*/
+
+}
+
+label{
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"],
+input[type="tel"]
+input[type="email"],
+input[type="date"],
+input[type="password"]
+{
+    width: 100%; /*largura total do input*/
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+}
+
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="password"]:focus{
+    border-color: rgb(11, 91, 240);
+    outline: none;
+}
+button{
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+}
